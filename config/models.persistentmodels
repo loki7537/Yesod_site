@@ -1,0 +1,19 @@
+-- По умолчанию этот файл используется `persistFileWith` в Model.hs (который импортируется Foundation.hs)
+-- Синтаксис этого файла здесь: https://github.com/yesodweb/persistent/blob/master/docs/Persistent-entity-syntax.md
+
+User
+    ident Text
+    password Text Maybe
+    UniqueUser ident
+    deriving Typeable
+Email
+    email Text
+    userId UserId Maybe
+    verkey Text Maybe
+    UniqueEmail email
+   -- Добавление «json» приводит к созданию экземпляров ToJSON и FromJSON.
+Comment json 
+    message Text
+    userId UserId Maybe
+    deriving Eq
+    deriving Show

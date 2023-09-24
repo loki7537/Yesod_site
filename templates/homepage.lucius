@@ -1,0 +1,62 @@
+.col-mi {
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-bottom: 48px;
+  flex: 1 0 0%;
+}
+
+.row1 {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+
+  margin-left:  -24px;
+  margin-right: -24px;
+}
+
+.row2 {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: -12px;
+  margin-bottom: 53px;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+.col-7 {
+  overflow: clip;
+  transform: skew(0deg);
+  border-radius: 11px;
+}
+
+.card.bg-secondary {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.card-text {
+  margin-bottom: 0px;
+}
+
+.col-5.align-self-center {
+  border-radius: 11px;
+  padding-left: 34px;
+}
+
+.img-fluid {
+  width="900";
+  height="400";
+  border-radius: 8px;
+}
+
+

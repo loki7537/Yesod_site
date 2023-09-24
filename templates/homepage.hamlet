@@ -1,0 +1,56 @@
+  <div class="container" style="min-height: 0;margin-top: 47px;">
+        <div .row2>
+            <div .col-7>
+                <img .img-fluid src="/static/img/z.jpg">
+            <div .col-5.align-self-center>
+                <h1>
+                   Порядок работы
+                <p>
+                   Сайт предназначен облегчить работу дендрологов.&nbsp;
+                    <br>
+                       This is a template that is great for small businesses.
+                       It doesn't have too muh fncy flare to it, but it makes a great use of the standard Bootstrap core components.
+                       Feel free to use this template for any project you want!dtdfudyidtyityu
+                <button .btn.btn-primary type="button">
+                     Подробнее
+        <div .card.bg-secondary>
+            <div .card-body.text-center.text-bg-secondary>
+                <p .card-text>
+                   Лес сам себя не вырубит&nbsp;
+        <div .row1>
+            <div .col-mi>
+                <div .card>
+                    <div .card-body>
+                        <h2 .card-title>
+                            Title
+                        <p .card-text>
+                            Nullam id dolor id nibh ultricies vehicula ut id elit.
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                            Donec id elit non mi porta gravida at eget metus.
+                    <div .card-footer>
+                       <button .btn.btn-primary type="button">
+                            Перечетка
+            <div .col-mi>
+                <div .card>
+                    <div .card-body>
+                        <h2 .card-title>
+                            Title
+                        <p .card-text>
+                            Nullam id dolor id nibh ultricies vehicula ut id elit.
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                            Donec id elit non mi porta gravida at eget metus.
+                    <div .card-footer>
+                       <button .btn.btn-primary type="button">
+                            Определить
+            <div .col-mi>
+                <div .card>
+                    <div .card-body>
+                        <h2 .card-title>
+                            Title
+                        <p .card-text>
+                            ghlkkhvj;g;jk;hjk;jk;nibh ultricies vehicula ut id elit.
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                            Donec id elit non mi porta gravida at eget metus.
+                    <div .card-footer>
+                       <button .btn.btn-primary type="button">
+                            Поболтать

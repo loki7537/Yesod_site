@@ -1,0 +1,42 @@
+<!-- Static navbar -->
+<nav class="navbar navbar-dark navbar-expand bg-primary">
+    <div class="container"><a class="navbar-brand" href="#">Brand</a>
+        <div class="collapse navbar-collapse justify-content-xl-end">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/">Домой</a>
+                <li class="nav-item"><a class="nav-link" href="perechetka">Перечетка</a>
+                <li class="nav-item"><a class="nav-link" href="#">Определитель</a>
+                <li class="nav-item"><a class="nav-link active link-primary" href="#">Вход</a>
+
+
+<!-- Page Contents -->
+
+<div .container>
+    $if not $ Just HomeR == mcurrentRoute
+        <ul .breadcrumb>
+            $forall bc <- parents
+                <li>
+                    <a href="@{fst bc}">#{snd bc}
+
+            <li .active>#{title}
+
+    $maybe msg <- mmsg
+      <div .alert.alert-info #message>#{msg}
+
+
+$if (Just HomeR == mcurrentRoute)
+    ^{widget}
+$else
+    <div .container>
+        <div .row>
+            <div .col-md-12>
+                ^{widget}
+
+<!-- Footer -->
+<footer class="text-center bg-primary">
+        <div class="container text-white py-4 py-lg-5">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a class="link-light" href="#">Web design</a></li>
+                <li class="list-inline-item me-4"><a class="link-light" href="#">Development</a></li>
+                <li class="list-inline-item"><a class="link-light" href="#">Hosting</a></li>
+
