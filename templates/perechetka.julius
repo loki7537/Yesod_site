@@ -79,7 +79,7 @@ function modifyText() {
         var raw_data;
         var arrayBuffer = this.result,
             array = new Uint8Array(arrayBuffer),
-            binaryString = String.fromCharCode.apply(null, array);
+            binaryString = arrayBufferToString(array);
             
         /* Call XLSX */
         var workbook = XLSX.read(binaryString, {
@@ -382,7 +382,24 @@ function error_Table(arrays)
 }
 
 
+function arrayBufferToString(buffer){
 
+    var bufView = new Uint16Array(buffer);
+    var length = bufView.length;
+    var result = '';
+    var addition = Math.pow(2,16)-1;
+
+    for(var i = 0;i<length;i+=addition){
+
+        if(i + addition > length){
+            addition = length - i;
+        }
+        result += String.fromCharCode.apply(null, bufView.subarray(i,i+addition));
+    }
+
+    return result;
+
+}
 
 //выбираем кнопку
 const button=document.getElementById('my_button');
